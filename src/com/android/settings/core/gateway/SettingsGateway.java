@@ -471,5 +471,7 @@ public class SettingsGateway {
             Settings.DevRunningServicesActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
             Settings.PrivateDnsSettingsActivity.class.getName(),
+            Settings.FirmwareVersionActivity.class.getName(),
+            Settings.WallpaperSettingsActivity.class.getName(),
     };
 }
