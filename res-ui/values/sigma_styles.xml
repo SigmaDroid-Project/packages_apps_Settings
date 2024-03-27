@@ -31,7 +31,6 @@
 
     <style name="sigmaTextPrimaryMedium" parent="sigmaTextPrimary">
         <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
-        <item name="android:textColor">@color/sigma_color_accent2</item>
     </style>
 
     <style name="sigmaTextSecondary">

@@ -44,7 +44,7 @@
                 android:layout_alignLeft="@android:id/title"
                 android:layout_marginTop="2.0dip"
                 android:maxLines="4"
-                style="@style/sigmaTextSecondary" />
+                style="@style/sigmaTextSecondaryWhite" />
                 
         <LinearLayout
             android:layout_width="match_parent"

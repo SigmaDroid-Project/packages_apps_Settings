@@ -37,8 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:textColor="@color/top_level_preference_text_color_primary"
-                style="@style/op_control_text_style_h6" />
+                style="@style/sigmaTextPrimaryMedium" />
 
             <TextView
                 android:id="@android:id/summary"
@@ -49,8 +48,7 @@
                 android:layout_alignStart="@android:id/title"
                 android:layout_alignLeft="@android:id/title"
                 android:layout_marginTop="2.0dip"
-                android:maxLines="4"
-                android:textColor="@color/top_level_preference_text_color_secondary" />
+                android:maxLines="4"/>
                 
         <LinearLayout
             android:layout_width="match_parent"
