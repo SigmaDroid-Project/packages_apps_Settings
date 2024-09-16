@@ -25,6 +25,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 
+import android.os.SystemProperties;
+
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
@@ -62,8 +64,9 @@ public class SystemNavigationPreferenceController extends BasePreferenceControll
         }
 
         // Skip if the recents component is not defined
-        final ComponentName recentsComponentName = ComponentName.unflattenFromString(
-                context.getString(com.android.internal.R.string.config_recentsComponentName));
+        final int defaultLauncher = SystemProperties.getInt("persist.sys.default_launcher", 0);
+        final String[] launcherComponents = context.getResources().getStringArray(com.android.internal.R.array.config_launcherComponents);
+        final ComponentName recentsComponentName = ComponentName.unflattenFromString(launcherComponents[defaultLauncher]);
         if (recentsComponentName == null) {
             return false;
         }
